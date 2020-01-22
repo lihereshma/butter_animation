@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%; 
+  margin: 0 auto;
+}
+/*=================================*/
+.wrapper {
+  max-width: 1360px;
+  width: 23%; 
+  margin: 0 auto;
+}
+.advertise_container{
+  border: 1px solid black;
+  background-image: url('../butter_assets/bg.jpg');
+  height: 600px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+/*=================================
+  header styling start
+=================================*/ 
+header img{
+  width: 30%;
+  margin: 20px 0px 40px;
+}
+/*=================================
+  header styling end
+=================================*/ 
+.plate img {
+  position: absolute;
+  left: -220px;
+  bottom: 25px;
+  width: 70%;
+  z-index: 1;
+  animation-name: plate;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+@keyframes plate {
+  0%  { left: -220px; bottom: 25px;}
+  25% { left: 0; bottom: 25px; }
+  50% { left: 0; bottom: 25px; }
+  75% { left: 0; bottom: 25px; }
+  100%  { left: -220px; bottom: 25px; }
+}
+/*=================================*/
+.sad_sonali img {
+  position: absolute;
+  width: 65%;
+  z-index: 1;
+  bottom: 90px;
+  right: -200px;
+  animation-name: sad_sonali;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes sad_sonali {
+  0%  { right: -200px; bottom: 90px;}
+  25% { right: 0; bottom: 90px; }
+  50% { right: 0; bottom: 90px; }
+  75% { right: 0; bottom: 90px; }
+  100%  { right: -200px; bottom: 90px; }
+  
+}
+/*=================================*/
+.boring_sandwich {
+  position: absolute;
+  left: -220px;
+  text-transform: capitalize;
+  color: #c2223a;
+  width: 50%;
+  display: inline-block;
+  font-size: 30px;
+  animation-name: boring_sandwich;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+@keyframes boring_sandwich {
+  0%  { left: -220px; }
+  25% { left: 70px; }
+  50% { left: 70px; }
+  75% { left: 70px; }
+  100%  { left: -220px; }  
+}
+/*=================================*/
+
+
+
+
+
+
+
+
+
+
+/*=================================
+  footer styling start
+=================================*/ 
+footer img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*=================================
+  footer styling start
+=================================*/ 
+
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+
+
+
+}  
