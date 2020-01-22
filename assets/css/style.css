@@ -192,7 +192,26 @@ header img{
   100%  { left: -220px; }  
 }
 /*=================================*/
+.sandwich_one img {
+  position: absolute;
+  left: -220px;
+  bottom: 25px;
+  width: 70%;
+  z-index: 1;
+  animation-name: plate;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
 
+@keyframes plate {
+  0%  { left: -220px; bottom: 25px;}
+  25% { left: 0; bottom: 25px; }
+  50% { left: 0; bottom: 25px; }
+  75% { left: 0; bottom: 25px; }
+  100%  { left: -220px; bottom: 25px; }
+}
 
 
 
