@@ -109,13 +109,14 @@ li {
   width: 23%; 
   margin: 0 auto;
 }
+
 .advertise_container{
-  border: 1px solid black;
-  background-image: url('../butter_assets/bg.jpg');
   height: 600px;
-  text-align: center;
-  position: relative;
+  border: 1px solid black;
   overflow: hidden;
+  position: relative;
+  background-image: url('../butter_assets/bg.jpg');  
+  text-align: center;  
 }
 /*=================================
   header styling start
@@ -130,83 +131,76 @@ header img{
 
 /*=================================*/
 .plate img {
-  position: absolute;
-  left: -390px;
-  bottom: 25px;
   width: 70%;
+  position: absolute;
   z-index: 1;
+  bottom: 25px;
+  left: -390px;   
   animation-name: plate;
   animation-duration: 3s;
-  animation-delay: 1s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease;
+  animation-delay: 1s;  
   animation-direction: forwards;
 }
 
 @keyframes plate {
-  0%  { left: -220px; bottom: 25px;}
-  10% { left: 0; bottom: 25px; }
-  90% { left: 0; bottom: 25px; }
+  0%    { left: -220px; bottom: 25px; }
+  10%   { left: 0; bottom: 25px; }
+  90%   { left: 0; bottom: 25px; }
   100%  { left: -220px; bottom: 25px; }
 }
 /*=================================*/
 .sad_sonali img {
-  position: absolute;
   width: 65%;
+  position: absolute;  
   z-index: 1;
-  bottom: 90px;
   right: -200px;
+  bottom: 90px; 
   animation-name: sad_sonali;
   animation-duration: 3s;
+  animation-timing-function: ease;
   animation-delay: 1.5s;
-  animation-timing-function: ease-out;
 }
 
 @keyframes sad_sonali {
-  0%  { right: -200px; bottom: 90px;}
-  10% { right: 0; bottom: 90px; }
-  40% { right: 0; bottom: 90px; }
-  85% { right: 0; bottom: 90px; }
-  100%  { right: -200px; bottom: 90px; }
-  
+  0%    { right: -200px; bottom: 90px; }
+  10%   { right: 0; bottom: 90px; }
+  40%   { right: 0; bottom: 90px; }
+  85%   { right: 0; bottom: 90px; }
+  100%  { right: -200px; bottom: 90px; }  
 }
 /*=================================*/
 .boring_sandwich {
+  width: 50%;
+  display: inline-block;
   position: absolute;
   left: -220px;
   text-transform: capitalize;
   color: #c2223a;
-  width: 50%;
-  display: inline-block;
   font-size: 30px;
   animation-name: boring_sandwich;
   animation-duration: 3s;
-  animation-delay: 1.5s;
   animation-timing-function: ease-out;
+  animation-delay: 1.5s;
 }
+
 @keyframes boring_sandwich {
-  0%  { left: -390px; }
-  10% { left: 70px; }
-  40% { left: 70px; }
-  85% { left: 70px; }
+  0%    { left: -390px; }
+  10%   { left: 70px; }
+  40%   { left: 70px; }
+  85%   { left: 70px; }
   100%  { left: -390px; }  
 }
-
-
-
-
-
-
 /*=================================*/
 .sandwich_one img {
-  position: absolute;
-  left: -170px;
-  bottom: 25px;
   width: 50%;
+  position: absolute;
   z-index: 1;
+  bottom: 25px;
+  left: -170px;
   animation-name: sandwich_one;
   animation-duration: 8.6s;
   animation-delay: 3.8s;
-  animation-direction: forwards;
 }
 
 @keyframes sandwich_one {
@@ -217,130 +211,122 @@ header img{
 }
 
 .sandwich_two img{
-  position: absolute;
-  left: -150px;
-  bottom: 36px;
   width: 35%;
+  position: absolute;
   z-index: 1;
+  bottom: 36px;
+  left: -150px; 
   animation-name: sandwich_two;
   animation-duration: 8.6s;
   animation-delay: 3.8s;
-  animation-timing-function: ease;
-  animation-direction: alternate;
 }
 
 @keyframes sandwich_two {
-  0%  { left: -150px; bottom: 36px;}
-  5% { left: 15px; bottom: 36px; }
-  95% { left: 15px; bottom: 36px; }
+  0%    { left: -150px; bottom: 36px; }
+  5%    { left: 15px; bottom: 36px; }
+  95%   { left: 15px; bottom: 36px; }
   100%  { left: -150px; bottom: 36px; }
 }
 
-
 .sandwich_three img{
-  position: absolute;
-  left: -145px;
   width: 33%;
-  bottom: 45px;
   z-index: 2;
+  position: absolute;
+  bottom: 45px;
+  left: -145px;
   animation-name: sandwich_three;
   animation-duration: 8.6s;
   animation-delay: 3.8s;
-  animation-direction: forwards;
 }
 
 @keyframes sandwich_three {
-  0%  { left: -145px; bottom: 45px;}
-  5% { left: 20px; bottom: 45px; }
-  10% { left: 20px; bottom: 75px; }
-  15% { left: 20px; bottom: 75px; }
-  25% { left: 20px; bottom: 75px; }
-  30% { left: 20px; bottom: 50px; }
-  95% { left: 20px; bottom: 50px; }
+  0%    { left: -145px; bottom: 45px; }
+  5%    { left: 20px; bottom: 45px; }
+  10%   { left: 20px; bottom: 75px; }
+  15%   { left: 20px; bottom: 75px; }
+  25%   { left: 20px; bottom: 75px; }
+  30%   { left: 20px; bottom: 50px; }
+  95%   { left: 20px; bottom: 50px; }
   100%  { left: -145px; bottom: 50px; }
 }
 /*=================================*/
 .mayo img{
-  position: absolute;
-  left: 20px;
   width: 30%;
-  bottom: 45px;
+  position: absolute;
   z-index: 1;
+  bottom: 45px;
+  left: 20px;
   opacity: 0;
   animation-name: mayo;
   animation-duration: 8.6s;
   animation-delay: 3.8s;
-  animation-direction: forwards;
 }
+
 @keyframes mayo {
-  0%  { left: 20px; bottom: 45px; opacity: 0;}
-  5% {  left: 20px; bottom: 45px; opacity: 0;}
-  10% { left: 20px; bottom: 45px; opacity: 0;}
-  15% { left: 20px; bottom: 45px; opacity: 0;}
-  25% {  left: 20px; bottom: 45px; opacity: 1;}
-  30% {  left: 20px; bottom: 45px; opacity: 1;}
-  95% {  left: 20px; bottom: 45px; opacity: 1;}
-  100%  { left: -145px; bottom: 45px; opacity: 1;}
+  0%    { left: 20px; bottom: 45px; opacity: 0; }
+  5%    { left: 20px; bottom: 45px; opacity: 0; }
+  10%   { left: 20px; bottom: 45px; opacity: 0; }
+  15%   { left: 20px; bottom: 45px; opacity: 0; }
+  25%   { left: 20px; bottom: 45px; opacity: 1; }
+  30%   { left: 20px; bottom: 45px; opacity: 1; }
+  95%   { left: 20px; bottom: 45px; opacity: 1; }
+  100%  { left: -145px; bottom: 45px; opacity: 1; }
 }
 
 .knife img{
   width: 25%;
-  left: 42px;
-  bottom: 55px;
-  z-index: 1;
   position: absolute;
+  z-index: 1;
+  bottom: 55px;
+  left: 42px;  
   opacity: 0;
   transform: rotateX(230deg);
   animation-name: knife;
   animation-duration: 1s;
   animation-delay: 5s;
-  animation-timing-function: ease;
 }
+
 @keyframes knife {
-  0%  { left: 42px; bottom: 55px; opacity: 0;}
-  25% { left: 45px; bottom: 53px; opacity: 1;}
-  50% { left: 50px; bottom: 50px; opacity: 1;}
-  75% { left: 55px; bottom: 45px; opacity: 1;}
-  100%  { left: 60px; bottom: 40px; opacity: 0;}
+  0%    { left: 42px; bottom: 55px; opacity: 0; }
+  25%   { left: 45px; bottom: 53px; opacity: 1; }
+  50%   { left: 50px; bottom: 50px; opacity: 1; }
+  75%   { left: 55px; bottom: 45px; opacity: 1; }
+  100%  { left: 60px; bottom: 40px; opacity: 0; }
 }
-
 /*=================================*/
-
 .sandwicheo{
-  position: absolute;
-  text-transform: capitalize;
-  color: #c2223a;
   width: 55%;
+  position: absolute; 
   right: -190px;
   display: inline-block;
+  color: #c2223a;
   font-size: 30px;
+  text-transform: capitalize;
   animation-name: sandwicheo;
   animation-duration: 3s;
   animation-delay: 6.5s;
-  animation-direction: forwards;
 }
+
 @keyframes sandwicheo {
-  0%  { left: -390px; }
-  10% { left: 70px; }
-  40% { left: 70px; }
-  85% { left: 70px; }
+  0%    { left: -390px; }
+  10%   { left: 70px; }
+  40%   { left: 70px; }
+  85%   { left: 70px; }
   100%  { left: -390px; }  
 }
 
-
 /*=================================*/
 .happy_sonali img{
-  position: absolute;
   width: 65%;
-  bottom: 90;
-  bottom: 100px;
-  right: -200px;
+  position: absolute;
   z-index: 1;
+  right: -200px;
+  bottom: 100px;
   animation-name: happy_soanli;
   animation-duration: 3s;
   animation-delay: 6.5s;
-  animation-direction: forwards;
 }
+
 @keyframes happy_soanli {
   0%  { right: -200px; }
   10% { right: -2px; }
@@ -348,8 +334,134 @@ header img{
   85% { right: -2px; }
   100%  { right: -200px; }  
 }
+/*=================================*/
+.chef img{  
+  width: 70%;
+  position: absolute;
+  z-index: 1;
+  right: -200px;
+  bottom: 100px;
+  animation-name: chef;
+  animation-duration: 3s;
+  animation-delay: 9.5s;
+}
 
+@keyframes chef{
+  0%   { bottom:100px; right:-200px;}
+  10%  { bottom:100px; right: 0px;}
+  40%  { bottom:100px; right: 0px;}
+  85%  { bottom:100px; right: 0px;}
+  100% { bottom:100px; right:-200px;}
+}
+/*=================================*/
+.fun_food {
+  width: 61%;
+  display: inline-block;
+  position: absolute;
+  left: -220px;
+  color: #c2223a;
+  font-size: 30px;
+  text-transform: capitalize; 
+  animation-name: fun_food;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 9.5s;
+}
+@keyframes fun_food {
+  0%    { left: -390px; }
+  10%   { left: 70px; }
+  40%   { left: 70px; }
+  85%   { left: 70px; }
+  100%  { left: -390px; }  
+}
+/*=================================*/
+.magic{
+  width: 61%;
+  display: inline-block;
+  position: absolute;
+  left: -220px;
+  color: #c2223a;
+  font-size: 30px; 
+  text-transform: capitalize; 
+  animation-name: magic;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes magic {
+  0%    { left: -220px; }
+  10%   { left: 60px; }
+  40%   { left: 60px; }
+  85%   { left: 60px; }
+  100%  { left: 60px; }  
+}
+/*=================================*/
+.veg_mayo img{  
+  width: 35%;
+  position: absolute;
+  right: -120px;
+  bottom: 10px;
+  animation-name: veg_mayo;
+  animation-duration: 7s;
+  animation-timing-function: ease;
+  animation-delay: 12.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes veg_mayo {
+  0%    { right: -120px; }
+  10%   { right: 90px; }
+  40%   { right: 90px; }
+  85%   { right: 90px; }
+  100%  { right: 90px; }  
+}
+/*=================================*/
+.hat img{
+  width: 40%;
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: -130px; 
+  animation-name: hat;
+  animation-duration: 6.5s;
+  animation-timing-function: ease;
+  animation-delay: 13s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hat {
+  0%    { top: 190px; left: -130px; }
+  10%   { top: 240px; left: 110px; }
+  40%   { top: 350px; left: 110px; }
+  85%   { top: 350px; left: 110px; }
+  100%  { top: 350px; left: 110px; }  
+}
+/*=================================*/
+.button a{
+  padding: 10px;
+  position: absolute;
+  border-radius: 3px;
+  top: 165px;
+  left: -100px;
+  text-transform: capitalize;
+  background-color: #3f2d89;
+  color: #fff;  
+  animation-name: button;
+  animation-duration: 4.5s;
+  animation-timing-function: ease;
+  animation-delay: 15s; 
+  animation-fill-mode: forwards;
+}
+
+@keyframes button {
+  0%    { top: 165px; left: -100px; }
+  10%   { top: 250px; left: 95px; }
+  40%   { top: 250px; left: 95px; }
+  85%   { top: 250px; left: 95px; }
+  100%  { top: 250px; left: 95px; }  
+}
 /*=================================
   footer styling start
 =================================*/ 
@@ -360,23 +472,14 @@ footer img{
   animation-name: table;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  display: block;
+  animation-fill-mode: forwards;
 }
 
 @keyframes table{
-  from { opacity: 0;}
-  to { opacity: 1;}
+  from  { opacity: 0;}
+  to    { opacity: 1;}
 }
 /*=================================
   footer styling start
 =================================*/ 
-
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
+  
